@@ -36,43 +36,42 @@ Subclass,levels=c("IT L2/3-1","IT L2/3-2","IT L3/4","IT L4/5-1","IT L4/5-2","IT 
 
 
 Subclass_col= c("IT L2/3-1"="#3E6AB7",
-"IT L2/3-2"= "#8496DF",
-"IT L3/4"= "#C8CFED",
-"IT L4/5-1"= "#AEEDE1",
-"IT L4/5-2"= "#B3F2F2",
-"IT L5/6"= "#71D1D3",
-"L5/6 NP"= "#0CACC0",
-"L6 CT"= "#00838F",
-"HCERC"= "#006065",
-"ERC"= "#324737",
-"VIP"="#195E20",
-"SST-1"="#23832C",
-"SST-2"="#61AA7C",
-"LAMP5-1"="#1ABC02",
-"LAMP5-2"="#00CE81",
-"PVALB-1"="#089992",
-"PVALB-2"="#64D8CD",
-"MEIS2-1"="#BAD8AB",
-"MEIS2-2"="#99E099",
-"Ast-1"= "#FFB2B2",
-"Ast-2"= "#D7517C",
-"Ast-3"= "#991343",
-"Oli-1"="#C96145",
-"Oli-2"="#EB8A47",
-"Oli-3"="#FBC57F",
-"OPC-1"= "#7B4F37",
-"OPC-2"= "#D5A370",
-"Mic-1"= "#CFA2D2",
-"Mic-2"="#834BA0",
-"Mic-3"="#573B88",
-"Mic-4"= "#BA49B2")
+                "IT L2/3-2"= "#8496DF",
+                "IT L3/4"= "#C8CFED",
+                "IT L4/5-1"= "#AEEDE1",
+                "IT L4/5-2"= "#B3F2F2",
+                "IT L5/6"= "#71D1D3",
+                "L5/6 NP"= "#0CACC0",
+                "L6 CT"= "#00838F",
+                "HCERC"= "#006065",
+                "ERC"= "#324737",
+                "VIP"="#195E20",
+                "SST-1"="#23832C",
+                "SST-2"="#61AA7C",
+                "LAMP5-1"="#1ABC02",
+                "LAMP5-2"="#00CE81",
+                "PVALB-1"="#089992",
+                "PVALB-2"="#64D8CD",
+                "MEIS2-1"="#BAD8AB",
+                "MEIS2-2"="#99E099",
+                "Ast-1"= "#FFB2B2",
+                "Ast-2"= "#D7517C",
+                "Ast-3"= "#991343",
+                "Oli-1"="#C96145",
+                "Oli-2"="#EB8A47",
+                "Oli-3"="#FBC57F",
+                "OPC-1"= "#7B4F37",
+                "OPC-2"= "#D5A370",
+                "Mic-1"= "#CFA2D2",
+                "Mic-2"="#834BA0",
+                "Mic-3"="#573B88",
+                "Mic-4"= "#BA49B2")
 
-subclass_colors<-c(
-  '#3E6AB7', '#8496DF', '#C8CFED', '#AEEDE1', '#B3F2F2','#71D1D3','#0CACC0','#00838F','#006065','#324737', #Exc
-  '#3E6AB7', '#63C66F', '#43D1C3', '#C93667', '#E69CAC','#DB874D','#F4CFB2','#D3D5ED','#6D79A0',# Inh
-  '#FFB2B2', '#D7517C', '#991343', #Ast
-  '#C96145','#EB8A47', '#FBC57F', #Oli
-  '#7B4F37','#D5A370'#OPC
+subclass_colors<-c('#3E6AB7', '#8496DF', '#C8CFED', '#AEEDE1', '#B3F2F2','#71D1D3','#0CACC0','#00838F','#006065','#324737', #Exc
+                    '#3E6AB7', '#63C66F', '#43D1C3', '#C93667', '#E69CAC','#DB874D','#F4CFB2','#D3D5ED','#6D79A0',# Inh
+                    '#FFB2B2', '#D7517C', '#991343', #Ast
+                    '#C96145','#EB8A47', '#FBC57F', #Oli
+                    '#7B4F37','#D5A370'#OPC
 )
 
 
@@ -101,12 +100,13 @@ brain_region_cols=c("1-AG"="#8DD3C7",
                     "5-HC"="#BEBADA",
                     "6-TH"="#B3DE69")
 
+brain_region_cols=c("#8DD3C7","#80B1D3","#FDB462","#FFED6F","#BEBADA","#B3DE69")
 
 marker_genes<-c("SLC17A7" ,"CUX2","RORB","NXPH2","VWA2","TOX3",
-"GAD1","VIP","SST","PVALB","MEIS2",
-"GFAP","MAG","PDGFRA",
-"CX3CR1",
-"P2RY12","MKI67")
+                "GAD1","VIP","SST","PVALB","MEIS2",
+                "GFAP","MAG","PDGFRA",
+                "CX3CR1",
+                "P2RY12","MKI67")
 
 major_celltype_markergenes<-c("SLC17A7","GAD2","GFAP","MOBP","VCAN","P2RY12")
 
