@@ -25,12 +25,14 @@ major_celltype_cols<-c("1-Exc" ="#34A047",
 
 
 
-Subclass,levels=c("IT L2/3-1","IT L2/3-2","IT L3/4","IT L4/5-1","IT L4/5-2","IT L5/6","L5/6 NP","L6 CT","HCERC","ERC",
-"VIP","SST-1","SST-2","LAMP5-1","LAMP5-2","PVALB-1","PVALB-2","MEIS2",
-"Ast-1","Ast-2","Ast-3",
-"Oli-1","Oli-2","Oli-3",
-"OPC-1","OPC-2",
-"Mic-1","Mic-2","Mic-3","Mic-4")
+Subclass,levels=c("IT L2/3-1","IT L2/3-2","IT L3/4","IT L4/5-1","IT L4/5-2","IT L5/6","L5/6 NP","L6 CT","HCERC","ERC", # Exc
+                  "VIP","SST-1","SST-2","LAMP5-1","LAMP5-2","PVALB-1","PVALB-2","MEIS2", # Inh
+                  "Ast-1","Ast-2","Ast-3",
+                  "Oli-1","Oli-2","Oli-3",
+                  "OPC-1","OPC-2",
+                  "Mic-1","Mic-2","Mic-3","Mic-4",
+                 # Vasc 
+                 )
 
 
 Subclass_col= c("IT L2/3-1"="#3E6AB7",
