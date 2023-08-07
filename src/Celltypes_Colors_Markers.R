@@ -143,16 +143,16 @@ motifs <- c("NEUROD2","NEUROD4","NEUROD6","NEUROG1","NEUROG3","SPIB", "SPI1","AT
 
 
 ############### Ast
-markerGenes_2 <- c("C4B","GFAP","DCLK1", "C3","SERPINA3","VIM", # 1.the most activated
+Ast_markerGene <- c("C4B","GFAP","DCLK1", "C3","SERPINA3","VIM", # 1.the most activated
                    "AQP4", #
                    "GRM3",
                    "HIF3A", "LSAMP", "GPC5","CXCL10","IL18",
                    "SLC1A2","DPP10","LUZP2","TRPM3","BRINP3") # xiaowei zhuang lab Ast activation score
 
 
-markerGenes_2 <- c("C4B", "C3","SERPINA3", "CXCL10","GFAP","VIM","IL18","HIF3A","LSAMP","GPC5","SLC1A2","LUZP2","TRPM3","BRINP3","GFAP") # xiaowei zhuang lab Ast activation score
+Ast_markerGenes_2 <- c("C4B", "C3","SERPINA3", "CXCL10","GFAP","VIM","IL18","HIF3A","LSAMP","GPC5","SLC1A2","LUZP2","TRPM3","BRINP3","GFAP") # xiaowei zhuang lab Ast activation score
 
-markerGenes_1 <- c("GRM3",
+Ast_markerGenes_3 <- c("GRM3",
 "AQP4",
 "SLC1A2",
 "SLC1A3",
@@ -179,7 +179,7 @@ markerGenes_1 <- c("GRM3",
 
 
 ####### Mic cell activation
-markerGenes  <- c("TPT1", "P2RY12", "DUSP1", "MKI67",
+Ast_markerGenes  <- c("TPT1", "P2RY12", "DUSP1", "MKI67",
 "B2M", "TREM2", "CCL2", 'APOE', "AXL", "ITGAX", "CD9", "C1QA", "C1QC", "CTSS", # Xiaowei zhuang Cell activation score
 "DPP10","MEG3","CHRM3","TRIM30A","IGTB2", # Xiaowei zhuang Cell marker genes
 "CCL3","CSF3R","CX3CR1")
