@@ -179,7 +179,7 @@ Ast_markerGenes_3 <- c("GRM3",
 
 
 ####### Mic cell activation
-Ast_markerGenes  <- c("TPT1", "P2RY12", "DUSP1", "MKI67",
+Mic_markerGenes  <- c("TPT1", "P2RY12", "DUSP1", "MKI67",
 "B2M", "TREM2", "CCL2", 'APOE', "AXL", "ITGAX", "CD9", "C1QA", "C1QC", "CTSS", # Xiaowei zhuang Cell activation score
 "DPP10","MEG3","CHRM3","TRIM30A","IGTB2", # Xiaowei zhuang Cell marker genes
 "CCL3","CSF3R","CX3CR1")
