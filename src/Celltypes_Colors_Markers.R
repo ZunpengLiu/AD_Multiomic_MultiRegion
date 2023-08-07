@@ -185,6 +185,8 @@ Mic_markerGenes  <- c("TPT1", "P2RY12", "DUSP1", "MKI67",
 "CCL3","CSF3R","CX3CR1")
 
 
+
+
 #### Oligodendrocyte
 Oli_markerGenes_1  <- c("RASGRF1","OPALIN")
 Oli_markerGenes_2  <- c("C4B","IL33","IL18") # Xiaowei zhuang lab for estimating the Oli activation score
