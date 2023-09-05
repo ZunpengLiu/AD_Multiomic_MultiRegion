@@ -84,3 +84,13 @@ ArchRPalettes <- list(
   purpleOrange = c("5"="#581845", "2"="#900C3F", "4"="#C70039", "3"="#FF5744", "1"="#FFC30F")
 )
 
+
+> paletteContinuous(set = "solarExtra", n = 50, reverse = FALSE)
+ [1] "#3361A5" "#3067B1" "#2E6EBE" "#2B75CB" "#297BD7" "#2682E4" "#2489F1"
+ [8] "#218FF4" "#1F96F6" "#1C9DF8" "#19A3FA" "#17AAFC" "#14B1FE" "#22B6FD"
+[15] "#35BAFA" "#48BFF7" "#5BC3F5" "#6DC7F2" "#80CCEF" "#8DCEED" "#97CFE9"
+[22] "#A0D1E6" "#A9D2E3" "#B3D3E0" "#BCD4DD" "#C4D4D6" "#CBD4CB" "#D1D4BF"
+[29] "#D8D3B4" "#DFD3A9" "#E5D39E" "#EBD18F" "#EECB7A" "#F1C666" "#F4C152"
+[36] "#F7BC3D" "#FAB629" "#FBAD1A" "#F7971D" "#F3801F" "#EF6A22" "#EB5325"
+[43] "#E73D27" "#E22929" "#D82727" "#CD2525" "#C22323" "#B82121" "#AD1F1F"
+[50] "#A31D1D"
