@@ -87,6 +87,35 @@ Inh_markers1<-c("PAX6","HMBOX1","CDH4","IL1RAPL2","DDR2",  # PAX6
 # Subtype
 
 
+Ast_cols=c("Ast DPP10"="#F9D2D2",
+                    "Ast LUZP2"="#FFB0BD",
+                    "Ast GRM3"="#D7517C",
+                    "Ast DCLK1"="#991343")
+
+Ast_cols=c("Ast DPP10","Ast LUZP2","Ast GRM3","Ast DCLK1")
+Ast_cols=c("#F9D2D2","#FFB0BD","#D7517C","#991343")
+
+Oli_cols=c("Oli GPC5"="#f9c893",
+"Oli RASGRF1"="#f79c5e",
+"Oli OPALIN"="#b55a00")
+Oli_celltypes=c("Oli GPC5","Oli RASGRF1","Oli OPALIN")
+Oli_cols=c("#f9c893","#f79c5e","#b55a00")
+
+
+Mic_cols=c("Mic DPP10"="#E1CAE5","Mic P2RY12"="#CFA2D2","Mic SPP1"="#7B5CBF","Mic TPT1"="#573B88")
+Mic_cols=c("Mic DPP10","Mic P2RY12","Mic SPP1","Mic TPT1")
+Mic_cols=c("#E1CAE5","#CFA2D2","#7B5CBF","#573B88")
+Mic_cols=c("Mic DPP10","Mic P2RY12","Mic SPP1","Mic TPT1","T cells")
+Mic_cols=c("#E1CAE5","#CFA2D2","#7B5CBF","#573B88","#834ba0")
+
+OPC_cols=c("OPC GPC5"="#ddbb93",
+"OPC PDGFRA"="#b38766",
+"OPC TPST1"="#75421f",
+"COP GPR17 SOX6"="#492711")
+
+OPC_cols=c("OPC GPC5","OPC PDGFRA","OPC TPST1","COP GPR17 SOX6")
+OPC_cols=c("#ddbb93","#b38766","#75421f","#492711")
+
 
 # Brain regions
 
