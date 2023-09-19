@@ -10,14 +10,13 @@ Class_colors<-c()
 
 major_celltype_markergenes<-c("SLC17A7","GAD2","GFAP","MOBP","VCAN","P2RY12")
 
-major_celltype_cols<-c("1-Exc" ="#34A047",
-                       "2-Inh"="#74C476",
-                       "3-Ast" = "#E11E26",
-                       "4-Oli" ="#F47E1F",
-                       "5-Opc" ="#B15928",
-                       "6-Mic_Immune" = "#6A3E98",
-                       "7-Vasc" = "#6A3E98")
-
+ major_celltype_cols<-c("Exc" ="#2DAA3F",
+                                         "Inh"="#9ED97A",
+                                         "Ast" = "#D62729",
+                                         "Oli" ="#F4A85E",
+                                         "Opc" ="#A14E2D",
+                                         "Mic_Immune" = "#BE9FCE",
+                                         "Vasc" = "#F2C0D5")
 
 
 
