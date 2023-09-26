@@ -22,6 +22,26 @@ major_celltype_markergenes<-c("SLC17A7","GAD2","GFAP","MOBP","VCAN","P2RY12")
 
 # SubClass - Minor cell types
 
+cat_order=CategoricalDtype(["Exc L2-3 IT","Exc L3-4 IT","Exc L3-5 IT","Exc L4-5 IT-1","Exc L4-5 IT-2","Exc L5 ET",
+                            "Exc L5/6 IT Car3","Exc L5-6 IT","Exc L6 IT","Exc L5/6 NP","Exc L6 CT",
+                            "Exc L6b","Exc Granule","Exc CA_Pyr","Exc EC","Exc EC_HC","Exc TH",
+                            "Inh VIP" ,"Inh LAMP5","Inh SST","Inh PVALB",
+                            "Inh PAX6","Inh MEIS2",
+                            "Ast","Oli","Opc",
+                            "Mic","T cells",
+                            "Vasc"],ordered=True)
+
+
+atac6.obs["Subclass_Sep2"]=atac6.obs["Subclass_Sep2"].astype(cat_order)
+atac6.uns["Subclass_Sep2_colors"]=np.array(['#F6C4E1', '#E6D2B8', '#6FC269', '#11CEB7', '#D6D6FE', "#4888C7",
+                                            '#22D4FE','#A2CF58',"#FFAFAD","#8C8C29","#99DF8A",
+                                            "#A9426F","#525B66","#77AAFD","#167F54","#1CBE4F","#A6E6ED",
+                                    "#4B96D1","#8BCEA0","#D6569F","#007CFC",
+                                    "#F6A154","#FFCBA7",
+                                    "#D52126","#FEB879","#A14E2D",
+                                    "#cfa2d2","#834ba0",
+                                    "#F9D2E0"], dtype=object)
+
 
 
 Subclass,levels=c("IT L2/3-1","IT L2/3-2","IT L3/4","IT L4/5-1","IT L4/5-2","IT L5/6","L5/6 NP","L6 CT","HCERC","ERC", # Exc
