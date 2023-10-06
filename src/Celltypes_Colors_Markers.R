@@ -138,8 +138,10 @@ OPC_cols=c("#ddbb93","#b38766","#75421f","#492711")
 
 # Brain regions
 
-brain_regions <- c(,,,,,)
 
+brain_regions=c("EC","HC","TH","AG","MTC","PFC")
+
+brain_region_cols=c("#FFED6F","#BEBADA","#B3DE69","#8DD3C7","#80B1D3","#FDB462")
 
 brain_region_cols=c("1-AG"="#8DD3C7",
                     "2-MT"="#80B1D3",
