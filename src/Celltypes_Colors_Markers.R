@@ -18,7 +18,7 @@ major_celltype_markergenes<-c("SLC17A7","GAD2","GFAP","MOBP","VCAN","P2RY12")
                                          "Mic_Immune" = "#BE9FCE",
                                          "Vasc" = "#F2C0D5")
 
-
+ major_celltype_cols<-c("#2DAA3F","#9ED97A","#D62729","#F4A85E",#A14E2D", "#BE9FCE", "#F2C0D5")
 
 # SubClass - Minor cell types
 
