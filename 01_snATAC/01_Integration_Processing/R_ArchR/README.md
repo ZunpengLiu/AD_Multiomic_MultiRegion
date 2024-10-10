@@ -1,5 +1,5 @@
 # 01_ArchR_Generate_Arrows:
-# ArchR Arrow Files Generation
+## ArchR Arrow Files Generation
 
 This script generates Arrow files from fragment data using the ArchR(https://www.archrproject.com/bookdown/index.html) package. Arrow files are required for further analysis in single-cell ATAC-seq workflows in ArchR. The script also performs quality control and adds doublet scores to the Arrow files.
 
@@ -22,9 +22,8 @@ The following R packages are required to run the script:
 
 
 
-
 # 02_ArchR_Generate_Proj_QC_1st_UMAP:
-# ArchR Project Creation and Dimensionality Reduction
+## ArchR Project Creation and Dimensionality Reduction
 
 This script is for generating an ArchR project from Arrow files, performing quality control, doublet filtering, and dimensionality reduction using IterativeLSI and UMAP. Batch effect correction is also applied using Harmony. The resulting project is ready for downstream analysis in single-cell ATAC-seq workflows.
 
@@ -42,7 +41,7 @@ This script processes Arrow files and applies the following steps:
 
 
 # 03_ArchR_High-Quality_Cell_Subsetting_and_Dimensionality_Reduction: 
-# ArchR High-Quality Cell Processing and Dimensionality Reduction
+## ArchR High-Quality Cell Processing and Dimensionality Reduction
 
 This script processes an ArchR project by loading high-quality cells, performing dimensionality reduction using IterativeLSI and UMAP, and integrating UMAP embeddings from external sources (muon and Scanpy). The script also generates quality control plots and compares ArchR-generated UMAPs with external data.
 
@@ -67,7 +66,7 @@ The script performs the following steps:
 
 
 # 04_ArchR_GeneScore_Marker_Genes:
-# ArchR Gene Score Analysis and Marker Gene Identification
+## ArchR Gene Score Analysis and Marker Gene Identification
 
 This script processes an ArchR project to calculate gene scores, export gene score matrices for each cell subtype, and identify marker genes for major cell types. The script also generates UMAP plots for canonical marker genes and performs a marker gene analysis using the GeneScoreMatrix.
 
@@ -101,7 +100,7 @@ The script includes the following major cell type marker genes for UMAP plotting
 
 
 # 05_ArchR_BigWig_Generation:
-# ArchR Group BigWig File Generation
+## ArchR Group BigWig File Generation
 
 This script generates group-specific BigWig files from an ArchR project. These BigWig files represent snATAC-seq signal tracks normalized by total fragment counts.
 
@@ -124,7 +123,7 @@ The output will consist of BigWig files for each specified group, saved to the o
 
 
 # 06_ArchR_Peak_Calling： 
-# ArchR Peak Calling and Export
+## ArchR Peak Calling and Export
 
 This script performs peak calling for snATAC-seq data using the ArchR package. Peaks are grouped by cell subtype and exported in both `.tsv` and `.bed` formats for further analysis or downstream processing.
 
@@ -160,7 +159,7 @@ The final output will include files such as:
 
 
 # 07_ArchR_Motif_Deviation:
-# ArchR Motif Deviations Analysis
+## ArchR Motif Deviations Analysis
 
 This script processes an ArchR project to compute per-cell deviations for motif annotations, generate summarized motif z-scores across cell subtypes, and identify motifs with high variability across clusters. The analysis is performed using the `addMotifAnnotations()` and `addDeviationsMatrix()` functions from the ArchR package.
 
