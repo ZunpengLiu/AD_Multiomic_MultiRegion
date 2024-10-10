@@ -11,7 +11,7 @@ addArchRGenome("hg38")   ## use hg38
 ## 1. Loading an ArchRProject
 ### --------------------------
 outd<-"./03_ArchR"
-workdir<-paste0(outd,"/03_TSS2_High_Quality")
+workdir<-paste0(outd,"/03_High_Quality")
 
 proj3<-loadArchRProject(workdir)
 

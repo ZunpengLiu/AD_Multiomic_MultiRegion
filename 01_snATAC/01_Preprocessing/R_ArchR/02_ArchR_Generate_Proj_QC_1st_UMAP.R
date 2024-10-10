@@ -28,7 +28,7 @@ outd<-"./03_ArchR/"
 
 proj1 <- ArchRProject(
                         ArrowFiles = ArrowFiles, 
-                        outputDirectory = paste0(outd,"/01_TSS2"),
+                        outputDirectory = paste0(outd,"/01_ArchR_Proj"),
                         copyArrows = TRUE 
                         #This is recommened so that if you modify the Arrow files you have an original copy for later usage.
 )
@@ -42,11 +42,11 @@ saveArchRProject(ArchRProj = proj1,
 proj2 <- filterDoublets(proj1)
 
 saveArchRProject(ArchRProj = proj2, 
-                 outputDirectory = paste0(outd,"/02_TSS2_filterDoublets"), 
+                 outputDirectory = paste0(outd,"/02_filterDoublets"), 
                  load = TRUE)
 
 write.table(proj2@cellColData,
-            paste0(outd,"/02_TSS2_filterDoublets/proj2_TSS2_filterDoublets.cellColData.tsv"),
+            paste0(outd,"/02_filterDoublets/proj2_TSS2_filterDoublets.cellColData.tsv"),
             sep="\t",
             quote=F,
             row.names=T)
@@ -104,5 +104,5 @@ proj2 <- addUMAP(
 )
 
 saveArchRProject(ArchRProj = proj2, 
-                 outputDirectory = paste0(outd,"/02_TSS2_filterDoublets"), 
+                 outputDirectory = paste0(outd,"/02_filterDoublets"), 
                  load = TRUE)

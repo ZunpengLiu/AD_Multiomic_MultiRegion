@@ -11,7 +11,7 @@ addArchRGenome("hg38")   ## use hg38
 ## 1. Loading an ArchRProject
 ### --------------------------
 outd<-"./03_ArchR"
-workdir<-paste0(outd,"/02_TSS2_filterDoublets")
+workdir<-paste0(outd,"/02_filterDoublets")
 
 proj2<-loadArchRProject(workdir)
 
@@ -24,11 +24,11 @@ cells=read.csv(paste0(indir,"snATAC.AllBrainRegion.Harmony_LibType.obs.tsv.gz"),
 # subset the cells
 proj3=proj2[row.names(proj2@cellColData)%in%cells$X]
 saveArchRProject(ArchRProj = proj3, 
-                 outputDirectory = paste0(outd,"/03_TSS2_High_Quality"), 
+                 outputDirectory = paste0(outd,"/03_High_Quality"), 
                  load = TRUE)
 # write the cellColData
 write.table(proj3@cellColData,
-            paste0(outd,"/03_TSS2_High_Quality/proj3_TSS2_filterDoublets.cellColData.tsv"),
+            paste0(outd,"/03_High_Quality/proj3_TSS2_filterDoublets.cellColData.tsv"),
             sep="\t",
             quote=F,
             row.names=T)
@@ -111,7 +111,7 @@ proj3 <- addUMAP(
 )
 
 saveArchRProject(ArchRProj = proj3, 
-                 outputDirectory = paste0(outd,"/03_TSS2_High_Quality"), 
+                 outputDirectory = paste0(outd,"/03_High_Quality"), 
                  load = TRUE)
 
 ### --------------------------
