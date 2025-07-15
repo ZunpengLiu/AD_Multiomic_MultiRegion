@@ -47,7 +47,6 @@ To run the script, you need the following Python packages:
 - **numpy**: For numerical computations.
 - **pandas**: For data manipulation and analysis.
 - **sklearn.decomposition (NMF)**: To perform Non-Negative Matrix Factorization.
-- **seaborn & matplotlib**: For plotting and visualization.
 - **scipy**: For additional mathematical functions.
 - **scikit-learn**: For matrix scaling and normalization.
 
