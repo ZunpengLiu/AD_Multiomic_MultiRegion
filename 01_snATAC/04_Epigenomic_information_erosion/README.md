@@ -15,11 +15,11 @@ This repository contains a script for analyzing chromatin states using the ArchR
   The `addFeatureCounts` function from ArchR is used to add the processed chromatin states to the ArchR project and calculate the fraction of reads in each state.
 
 - **Step 4: Write Output**  
-  The final processed data for the chromatin state feature counts is written to the `./05_ErosionScore/` directory.
+  The final processed data for the chromatin state feature counts is written to the `./05_InformationScore/` directory.
 
 ## Output
 
-The output of the script is a table of chromatin state feature counts per cell, which is saved in the `./05_ErosionScore/` directory as `<tissue>.Count_Fractions.txt`.
+The output of the script is a table of chromatin state feature counts per cell, which is saved in the `./05_InformationScore/` directory as `<tissue>.Count_Fractions.txt`.
 
 
 
@@ -38,16 +38,12 @@ The script reads in data from .txt files that contain chromatin state ratio matr
 The script normalizes the ratio matrix using Z-score normalization, which scales the data based on the mean and standard deviation of each chromatin state.
 
 
-- **3. Calculate the Z-score Erosion Score**
-Using the Z-score normalized matrix and a predefined sign_matrix, the erosion score is calculated by summing the weighted Z-scores for each chromatin state.
+- **3. Calculate the Z-score epigenomic information Score**
+Using the Z-score normalized matrix and a predefined sign_matrix, the epigenomic information score is calculated by summing the weighted Z-scores for each chromatin state.
 
 - **4. Process Chromatin States in Brain Regions**
 The script processes chromatin state data for several brain regions: frontal cortex, hippocampus, middle frontal area, and angular gyrus. It calculates erosion scores for each of these regions and stores the final result.
 
 ## Output
-The final output is a tab-separated file ErosionScore.txt, which contains the Z-score erosion scores for each chromatin state across all processed brain regions. The erosion score for each brain region is calculated and stored under the respective Z-score erosion score column. The overall erosion score is computed as the mean of these scores.
-
-
-
-
+The final output is a tab-separated file Score.txt, which contains the Z-score epigenomic information scores for each chromatin state across all processed brain regions. The erosion score for each brain region is calculated and stored under the respective Z-score erosion score column. The overall erosion score is computed as the mean of these scores.
 
