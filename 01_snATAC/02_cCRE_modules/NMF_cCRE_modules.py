@@ -104,8 +104,9 @@ data = pd.read_csv("ATAC.Subtype_BrainRegion.PeakScoreMatrix.tsv",sep="\t",
                    index_col=0)
 
 # Run NMF
-prefix="Subtype_BrainRegion_M150"
-n_components = 150
+prefix="Subtype_BrainRegion"
+n=150  # number of modules to extract, can be adjusted
+n_components = n # of modules to extract
 model = NMF(n_components=n_components, init='nndsvda', random_state=0)
 W = model.fit_transform(data) 
 H = model.components_ 
