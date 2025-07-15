@@ -26,7 +26,7 @@ deg.nebula <- function(Seurat_Obj, pathology, sample.col,
                        cpc = 0, reml = 1) {
     
     # Define the covariates to be included in the model
-    covariates <- c("msex", "pmi", "LibType", "total_counts")
+    covariates <- c("age", "msex", "pmi", "LibType", "total_counts")
     
     # Filter out covariates not present in the Seurat object metadata
     covariates <- covariates[covariates %in% colnames(Seurat_Obj@meta.data)]
