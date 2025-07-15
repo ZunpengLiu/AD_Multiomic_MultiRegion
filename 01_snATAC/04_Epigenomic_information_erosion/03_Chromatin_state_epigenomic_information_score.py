@@ -34,10 +34,10 @@ def z_score_normalize(matrix):
     
     return z_score_matrix
 
-def Zcore_erosion_score(ratio_matrix):    
+def Zcore_info_score(ratio_matrix):    
     z_score_matrix = z_score_normalize(ratio_matrix)
-    erosion_score = np.sum(z_score_matrix.values * sign_matrix, axis=1)
-    return erosion_score
+    score = np.sum(z_score_matrix.values * sign_matrix, axis=1)
+    return score
 
 # prepare the data
 workdir="./05_ErosionScore"
@@ -45,17 +45,13 @@ os.chdir(workdir)
 
 ChromatinStates=['EnhA1', 'EnhA2', 'EnhBiv', 'EnhG1', 'EnhG2', 'EnhWk', 'Het', 'Quies', 'ReprPC', 'ReprPCWk', 'TssA', 'TssBiv', 'TssFlnk', 'TssFlnkD','TssFlnkU', 'Tx', 'TxWk', 'ZNF.Rpts']
 
-sign_matrix=[-1, -1, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, -1, -1, -1, 1]
+sign_matrix=[1, 1, 1, 1, 1, 1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1, -1]
 
 # calculate the erosion score for the chromatin states defined in different brain regions
-for x in ["BSS00369","BSS01126","BSS01272","BSS00077"]:
+for x in ["BSS00369","BSS00371","BSS01124","BSS01125","BSS01126","BSS01271,"BSS01272","BSS00077","BSS00078"]:
     raw, ratio_matrix = load_data(x+".Count_Fractions.txt",ChromatinStates)
-    raw["Zcore_ErosionScore."+x]=Zcore_erosion_score(ratio_matrix)
+    raw["Zcore_Score."+x]=Zcore_info_score(ratio_matrix)
 
-# BSS00369 for the frontal cortex, BSS01126 for the hippocampus, BSS01272 for the middle frontal area, and BSS00077 for the angular gyrus
-raw["ErosionScore"]=raw[["Zcore_ErosionScore.BSS00369",
-                            "Zcore_ErosionScore.BSS01126",
-                            "Zcore_ErosionScore.BSS01272",
-                            "Zcore_ErosionScore.BSS00077"]].mean(axis=1)
+raw["Score"]=raw[["Zcore_Score.BSS00369","Zcore_Score.BSS00371","Zcore_Score.BSS01124","Zcore_Score.BSS01125","Zcore_Score.BSS01126","Zcore_Score.BSS01271","Zcore_Score.BSS01272","Zcore_Score.BSS00077","Zcore_Score.BSS00078"]].mean(axis=1)
 
-raw.to_csv("ErosionScore.txt",sep="\t",index=False)
+raw.to_csv("Score.txt",sep="\t",index=False)
