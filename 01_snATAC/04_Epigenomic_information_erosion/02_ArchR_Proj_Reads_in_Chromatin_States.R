@@ -64,7 +64,7 @@ write.table(proj3@cellColData,file=paste0(outdir,"/",tissue,".Count_Fractions.tx
 #!/usr/bin/sh
 #SBATCH -p kellis
 #SBATCH -t 60:00:00
-#SBATCH --mem=600G
+#SBATCH --mem=60G
 #SBATCH -N 1
 #SBATCH -n 20
 #SBATCH --job-name=BSS01125
