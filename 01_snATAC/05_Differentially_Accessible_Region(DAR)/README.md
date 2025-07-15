@@ -5,7 +5,7 @@ This repository contains an R script for performing **Differentially Accessible 
 ## Features
 
 - **DAR Identification**: Detects differentially accessible regions (DARs) in relation to specific pathologies across different cell types.
-- **Covariate Adjustment**: Adjusts for confounding factors such as sex, PMI, library type, and total counts.
+- **Covariate Adjustment**: Adjusts for confounding factors such as age, sex, PMI, library type, and total counts.
 - **Output**: Provides p-values, log fold changes, false discovery rate (FDR) adjusted p-values, overdispersion estimates, and convergence information.
 
 ## Dependencies
