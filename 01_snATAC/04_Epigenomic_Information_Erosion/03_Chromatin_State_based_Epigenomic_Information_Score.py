@@ -48,7 +48,7 @@ ChromatinStates=['EnhA1', 'EnhA2', 'EnhBiv', 'EnhG1', 'EnhG2', 'EnhWk', 'Het', '
 sign_matrix=[1, 1, 1, 1, 1, 1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1, -1]
 
 # calculate the erosion score for the chromatin states defined in different brain regions
-for x in ["BSS00369","BSS00371","BSS01124","BSS01125","BSS01126","BSS01271,"BSS01272","BSS00077","BSS00078"]:
+for x in ["BSS00369","BSS00371","BSS01124","BSS01125","BSS01126","BSS01271","BSS01272","BSS00077","BSS00078"]:
     raw, ratio_matrix = load_data(x+".Count_Fractions.txt",ChromatinStates)
     raw["Zcore_Score."+x]=Zcore_info_score(ratio_matrix)
 
